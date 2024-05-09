@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sdanzanr <sdanzanr@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/15 21:51:05 by sdanzanr          #+#    #+#             */
-/*   Updated: 2024/04/16 01:15:05 by sdanzanr         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <stdio.h>
 #include <string.h>
 void	*ft_memmove(void *dst, const void *src, size_t len)
@@ -22,7 +10,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	d = (char *)dst;
 	i = 0;
 	if (d > s)
-		while (len-- > 0)
+		while (len-- > i)
 			d[len] = s[len];
 	else
 		while (i < len)
