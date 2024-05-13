@@ -14,13 +14,9 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int	ft_isalpha(int str)
+int	ft_isalpha(int c)
 {
-	if (('A' <= str && str <= 'Z') || ('a' <= str && str <= 'z'))
-	{
-		return (1);
-	}
-	return (0);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
 
 int	main(void)
