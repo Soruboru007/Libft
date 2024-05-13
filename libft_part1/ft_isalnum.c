@@ -13,14 +13,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
-	if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z') || ('0' <= c
-			&& c <= '9'))
-	{
-		return (1);
-	}
-	return (0);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0'
+			&& c <= '9'));
 }
 
 int	main(void)
