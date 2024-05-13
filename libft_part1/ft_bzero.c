@@ -13,22 +13,21 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/*ここではポインタの概念を復習した.
-＊（アスタリスク）は住所の中身を指してる。
-str++;に＊（アスタリスク）を付けてない理由は次のメモリアドレスを指すため*/
+#include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	ft_bzero(void *b, size_t len)
 {
-	size_t	i;
+	int				i;
+	unsigned char	*ptr;
 
 	i = 0;
-	while (i < n)
+	ptr = b;
+	while (i < (int)len)
 	{
-		((char *)s)[i] = 0;
+		ptr[i] = 0;
 		i++;
 	}
 }
-
 int main(void)
 {
     char str[] = "0123456789";
