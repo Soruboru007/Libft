@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int	ft_isascii(int c)
+int	ft_isprint(int c)
 {
 	if (31 < c && c < 127)
 	{
