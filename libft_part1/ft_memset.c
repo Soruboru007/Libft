@@ -6,7 +6,7 @@
 /*   By: sdanzanr <sdanzanr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 16:34:25 by sdanzanr          #+#    #+#             */
-/*   Updated: 2024/05/15 16:31:23 by sdanzanr         ###   ########.fr       */
+/*   Updated: 2024/05/15 17:05:51 by sdanzanr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	*ft_memset(void *buf, int ch, size_t n)
 		p[n - 1] = ch;
 		n--;
 	}
+	return buf;
 }
 
 // int	main(void)

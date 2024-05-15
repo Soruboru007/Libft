@@ -6,7 +6,7 @@
 /*   By: sdanzanr <sdanzanr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 01:30:45 by sdanzanr          #+#    #+#             */
-/*   Updated: 2024/05/15 16:30:45 by sdanzanr         ###   ########.fr       */
+/*   Updated: 2024/05/15 16:50:46 by sdanzanr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ int	ft_isalnum(int c)
 			&& c <= '9'));
 }
 
-int	main(void)
-{
-	printf("%d\n", ft_isalnum('a'));
-	printf("%d\n", ft_isalnum('D'));
-	printf("%d\n", ft_isalnum('0'));
-	printf("%d\n", ft_isalnum('*'));
-	printf("%d\n", ft_isalnum('\0'));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isalnum('a'));
+// 	printf("%d\n", ft_isalnum('D'));
+// 	printf("%d\n", ft_isalnum('0'));
+// 	printf("%d\n", ft_isalnum('*'));
+// 	printf("%d\n", ft_isalnum('\0'));
+// 	return (0);
+// }
