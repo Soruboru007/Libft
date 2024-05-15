@@ -6,7 +6,7 @@
 /*   By: sdanzanr <sdanzanr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 17:49:33 by sdanzanr          #+#    #+#             */
-/*   Updated: 2024/04/28 07:16:46 by sdanzanr         ###   ########.fr       */
+/*   Updated: 2024/05/15 16:31:01 by sdanzanr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ void	ft_bzero(void *b, size_t len)
 		i++;
 	}
 }
-int main(void)
-{
-    char str[] = "0123456789";
-	ft_bzero(str, 1);
-	printf("%s\n", str);
-    return 0;
-}
+// int main(void)
+// {
+//     char str[] = "0123456789";
+// 	ft_bzero(str, 1);
+// 	printf("%s\n", str);
+//     return 0;
+// }
