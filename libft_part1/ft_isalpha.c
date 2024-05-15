@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
