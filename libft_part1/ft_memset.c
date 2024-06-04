@@ -12,28 +12,16 @@
 
 #include "libft.h"
 
-//ここではsize_tはint型とchar型の通訳みたいなもん。(バイト数)
-//（int型とchar型は直接、比較できないからそうだ。）
 void	*ft_memset(void *buf, int ch, size_t n)
 {
-	char	*p;
+	size_t			i;
+	unsigned char	*ptr;
 
-	p = (char *)buf;
-	while (n)
+	i = 0;
+	ptr = (unsigned char *)buf;
+	while (i < n)
 	{
-		p[n - 1] = ch;
-		n--;
+		ptr[i++] = (unsigned char)ch;
 	}
-	return buf;
+	return (buf);
 }
-
-// int	main(void)
-// {
-// 	char str[] = "0123456789";
-
-// 	// memset(str+2, '*', 5);
-// 	ft_memset(str + 2, '*', 5);
-// 	printf("%s\n", str);
-
-// 	return (0);
-// }
